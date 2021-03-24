@@ -9,6 +9,19 @@ GIT
       rack (>= 1.5.2, < 3)
       railties (>= 4.0)
 
+GIT
+  remote: https://github.com/plataformatec/devise
+  revision: fb48336709bc1a29ff15b7170ed7b33906c66888
+  branch: 3-stable
+  specs:
+    devise (3.5.10)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -646,13 +659,6 @@ GEM
     concurrent-ruby (1.1.5)
     crass (1.0.4)
     debug_inspector (0.0.3)
-    devise (3.5.10)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     devise-bootstrap-views (0.0.11)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -737,9 +743,9 @@ GEM
     rdoc (4.3.0)
     recaptcha (4.8.0)
       json
-    responders (2.4.0)
-      actionpack (>= 4.2.0, < 5.3)
-      railties (>= 4.2.0, < 5.3)
+    responders (2.4.1)
+      actionpack (>= 4.2.0, < 6.0)
+      railties (>= 4.2.0, < 6.0)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -793,11 +799,11 @@ DEPENDENCIES
   bootstrap-datepicker-rails
   byebug
   coffee-rails (~> 4.1.0)
-  devise (~> 3.2)
+  devise!
   devise-bootstrap-views
   jbuilder (~> 2.0)
   jquery-rails
-  milia (~> 1.0)
+  milia
   pg (~> 0.20.0)
   rails (= 4.2.11.1)
   rails_12factor
@@ -812,4 +818,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.16.6
+   1.17.2

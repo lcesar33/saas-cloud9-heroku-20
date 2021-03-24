@@ -9,8 +9,15 @@ gem 'rails', '4.2.11.1'
 #gem 'pg', '~> 0.15'
 gem 'pg', '~> 0.20.0'
 
-gem 'devise', '~>3.2'
-gem 'milia', '~>1.0'
+#gem 'devise', '~>3.2'
+#gem 'devise', git: 'https://github.com/plataformatec/devise' #, ref: '88e9a85'
+#gem 'devise', '~>3.4'
+#gem 'devise', '~>4.4.1'
+#gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise' , branch: '3-stable'
+#gem 'milia', '~>1.0'
+#gem 'milia', '~>1.3.1'
+gem 'milia'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
