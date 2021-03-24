@@ -1,7 +1,7 @@
 Rails.application.configure do
    
   # devise says to define default url
-  config.action_mailer.default_url_options = { :host => 'secure.simple-milia-app.com', :protocol => 'https' }
+  #config.action_mailer.default_url_options = { :host => 'secure.simple-milia-app.com', :protocol => 'https' }
 
   ActionMailer::Base.delivery_method = :smtp
 
@@ -26,7 +26,7 @@ Rails.application.configure do
   config.eager_load = true
   
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'cloud9-saas.herokuapp.com', :protocol => 'https'}
+  config.action_mailer.default_url_options = { :host => 'saas-cloud9-heroku-20.herokuapp.com', :protocol => 'https'}
   
   
   # Full error reports are disabled and caching is turned on.
